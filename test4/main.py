@@ -24,10 +24,10 @@ while True:
     # check for changes in the clipboard text
     new_clipboard_text = clipboard.paste()
     if new_clipboard_text != clipboard_text:
-    clipboard_text = new_clipboard_text
-    # speak the new clipboard text
-    engine.say(clipboard_text)
-    engine.runAndWait()
+        clipboard_text = new_clipboard_text
+        # speak the new clipboard text
+        engine.say(clipboard_text)
+        engine.runAndWait()
 
 # To add play, pause, and reset buttons that bind to the spacebar, you can use the tkinter library to create the buttons and bind them to the spacebar key:
 
